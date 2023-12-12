@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Vacunación</title>
+    <link href="U4T1_rfg.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Formulario de Vacunación</legend>
+        <form action="#" method="post">
+            <p>
+                <label for="nombre">Nombre del paciente:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+            </p>
+            <p>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni"><br>
+            </p>
+            <p>
+                <label for="fabricante">Fabricante de la vacuna:</label>
+                <select id="fabricante" name="fabricante">
+                    <option value="">----------------</option>
+                    <option value="astrazeneca">Oxford-Astrazeneca</option>
+                    <option value="pfizer">Pfizer-Biontech</option>
+                    <option value="moderna">Moderna</option>
+                </select><br>
+            </p>
+            <p>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password"><br>
+            </p>
+        </form>
+    </fieldset>
+    <br>
+    <input type="reset" value="Resetear">
+    <input type="submit" value="Enviar" id="enviar">
+    <br>
+    <br>
+    <div id="mensaje-error"></div>
+
+    <script type="text/javascript" src="U4T1_rfg.js"></script>
+
+</body>
+
+</html>
