@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Grabación</title>
+    <link href="U4T3_rfg.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <form id="form" action="https://www.youtube.com" method="get">
+        <label for="titulo">Título de la grabación:</label>
+        <input type="text" id="titulo" name="titulo">
+
+        <label for="tipoGrabacion">Tipo de grabación:</label>
+        <select id="tipoGrabacion" name="tipoGrabacion">
+            <option value="directo">Directo</option>
+            <option value="falsoDirecto" selected>Falso directo</option>
+            <option value="cebo">Cebo</option>
+            <option value="cola">Cola</option>
+        </select>
+
+        <label for="codigo">Código de grabación:</label>
+        <select id="codigo" name="codigo">
+            <option value="BC_67">BC_67</option>
+            <option value="FR_56">FR_56</option>
+            <option value="DE_33">DE_33</option>
+            <option value="DF_77">DF_77</option>
+        </select>
+
+        <label for="password">Password de la periodista:</label>
+        <input type="password" id="password" name="password">
+
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+
+    <div id="errores"></div>
+
+    <script type="text/javascript" src="U4T3_rfg.js"></script>
+
+</body>
+
+</html>
